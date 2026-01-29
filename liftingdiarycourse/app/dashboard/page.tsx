@@ -2,6 +2,8 @@ import { format } from "date-fns";
 import { getWorkoutsByDate } from "@/data/workouts";
 import { WorkoutLog } from "./workout-log";
 
+export const dynamic = "force-dynamic";
+
 type DashboardPageProps = {
   searchParams: Promise<{ date?: string }>;
 };

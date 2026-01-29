@@ -50,7 +50,7 @@ export function WorkoutLog({ workouts, selectedDate }: WorkoutLogProps) {
 
     const params = new URLSearchParams(searchParams.toString());
     params.set("date", format(newDate, "yyyy-MM-dd"));
-    router.push(`/dashboard?${params.toString()}`);
+    router.replace(`/dashboard?${params.toString()}`);
   }
 
   return (
